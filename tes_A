@@ -31,8 +31,11 @@ INSERT INTO courses (id,course, mentor, title)
 VALUES ('1','C++', 'Ari', 'Dr.'),
 ('2','C#', 'Ari', 'Dr.'), 
 ('3','C#', 'Ari', 'Dr.'),
-('4','CSS', 'Ari', 'Dr.'),
-('5','HTML', 'Ari', 'Dr.'),
-('6','Javascript',  'Ari', 'Dr.')
+('4','CSS', 'Cania', 'S.Kom'),
+('5','HTML', 'Cania', 'S.Kom'),
+('6','Javascript', 'Cania', 'S.Kom'),
+('7','Python', 'Barry', 'S.T'),
+('8','Micropython', 'Barry', 'S.T'),
+('9','Java', 'Darren', 'M.T'),
+('10','Ruby', 'Darren', 'M.T')
 ;
-
