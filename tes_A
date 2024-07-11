@@ -1,3 +1,8 @@
+
+1. Buatlah tabel "users" yang memiliki struktur/model sebagai berikut. Tabel
+"users" merupakan kumpulan data peserta didik di sebuah sekolah.
+
+
 CREATE TABLE user (
   id INT(11) NOT NULL,  
   username VARCHAR(50) NOT NULL, 
@@ -8,6 +13,10 @@ CREATE TABLE user (
   PRIMARY KEY (id)                      
 );
 
+
+Masukkan beberapa data berikut ke dalam tabel "users". Hasil yang
+diharapkan adalah:
+
 INSERT INTO user (id,username, email, password, created_at, updated_at)
 VALUES ('1','Andi', 'Andi@andi.com', '12345', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP ),
 ('2','Budi', 'budi@budi.com', ' 67890', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), 
@@ -17,6 +26,11 @@ VALUES ('1','Andi', 'Andi@andi.com', '12345', CURRENT_TIMESTAMP, CURRENT_TIMESTA
 ('6','Fafa', 'fafa@fafa.com', ' pqrst', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
 ;
 
+2. Buatlah tabel "courses" yang memiliki struktur/model sebagai berikut. Tabel
+"courses" merupakan kumpulan data mata kuliah yang diajarkan di sebuah
+Sekolah.
+
+
 CREATE TABLE courses (
   id INT(11) NOT NULL,  
   course VARCHAR(50) NOT NULL, 
@@ -24,6 +38,9 @@ CREATE TABLE courses (
   title VARCHAR(255) NOT NULL,        
   PRIMARY KEY (id)                  
 );
+
+Masukkan beberapa data berikut ke dalam tabel "courses". Hasil yang
+diharapkan adalah:
 
 INSERT INTO courses (id,course, mentor, title)
 VALUES ('1','C++', 'Ari', 'Dr.'),
@@ -38,10 +55,18 @@ VALUES ('1','C++', 'Ari', 'Dr.'),
 ('10','Ruby', 'Darren', 'M.T')
 ;
 
+3. Buatlah tabel "userCourse" yang memiliki struktur/model sebagai berikut.
+Tabel "userCourse" merupakan tabel penghubung/transaksi antara tabel
+"user" & "courses".
+
+
 CREATE TABLE userCourses (
   id_user INT(11) NULL,  
   id_course INT(11) NULL                 
 );
+
+Masukkan beberapa data berikut ke dalam tabel "userCourse". Hasil yang
+diharapkan adalah:
 
 
 INSERT INTO userCourses (id_user, id_course)
