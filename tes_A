@@ -20,7 +20,7 @@ diharapkan adalah:
 INSERT INTO user (id,username, email, password, created_at, updated_at)
 VALUES ('1','Andi', 'Andi@andi.com', '12345', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP ),
 ('2','Budi', 'budi@budi.com', ' 67890', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), 
-('3','Caca', 'budi@budi.com', ' abcde', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('3','Caca', 'caca@caca.com', ' abcde', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
 ('4','Deni', 'deni@deni.com', ' fghij', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
 ('5','Euis', 'euis@euis.com', ' klmno', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
 ('6','Fafa', 'fafa@fafa.com', ' pqrst', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
