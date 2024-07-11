@@ -1,9 +1,38 @@
 CREATE DATABASE sekolahku;
 
-
-CREATE TABLE users (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nama VARCHAR(100),
-    email VARCHAR(100) UNIQUE,
-    password VARCHAR(255)
+CREATE TABLE user (
+  id INT(11) NOT NULL AUTO_INCREMENT,  
+  username VARCHAR(50) NOT NULL, 
+  email VARCHAR(50) NOT NULL,   
+  password VARCHAR(255) NOT NULL,        
+  created_at NULL DEFAULT CURRENT_TIMESTAMP, 
+  updated_at NULL DEFAULT CURRENT_TIMESTAMP, 
+  PRIMARY KEY (id)                      
 );
+
+INSERT INTO user (id,username, email, password, created_at, updated_at)
+VALUES ('1','Andi', 'Andi@andi.com', '12345', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP ),
+('2','Budi', 'budi@budi.com', ' 67890', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), 
+('3','Caca', 'budi@budi.com', ' abcde', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('4','Deni', 'deni@deni.com', ' fghij', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('5','Euis', 'euis@euis.com', ' klmno', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('6','Fafa', 'fafa@fafa.com', ' pqrst', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+;
+
+CREATE TABLE courses (
+  id INT(11) NOT NULL,  
+  course VARCHAR(50) NOT NULL, 
+  mentor VARCHAR(50) NOT NULL,   
+  title VARCHAR(255) NOT NULL,        
+  PRIMARY KEY (id)                  
+);
+
+INSERT INTO courses (id,course, mentor, title)
+VALUES ('1','C++', 'Ari', 'Dr.'),
+('2','C#', 'Ari', 'Dr.'), 
+('3','C#', 'Ari', 'Dr.'),
+('4','CSS', 'Ari', 'Dr.'),
+('5','HTML', 'Ari', 'Dr.'),
+('6','Javascript',  'Ari', 'Dr.')
+;
+
